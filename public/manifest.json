@@ -1,0 +1,17 @@
+{
+  "name": "VIAI Labs — Applied AI & Technology Platform",
+  "short_name": "VIAI Labs",
+  "description": "Learn. Build. Innovate. Premier technology and AI education company.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1224",
+  "theme_color": "#0B1224",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

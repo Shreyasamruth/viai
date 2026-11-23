@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --glow-blue: rgba(22, 140, 240, 0.6);
+  --glow-cyan: rgba(6, 182, 212, 0.6);
+  --glow-violet: rgba(139, 92, 246, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: #060A14;
+  color: #F8FAFC;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 3D Perspective & Preservation Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1500 {
+  perspective: 1500px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.translate-z-10 {
+  transform: translateZ(10px);
+}
+
+.translate-z-20 {
+  transform: translateZ(20px);
+}
+
+.translate-z-30 {
+  transform: translateZ(30px);
+}
+
+.translate-z-40 {
+  transform: translateZ(40px);
+}
+
+/* Hyper Cyber Animations */
+@keyframes borderBeam {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1.5deg);
+  }
+}
+
+@keyframes holographicPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+    filter: drop-shadow(0 0 15px rgba(22, 140, 240, 0.4));
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 30px rgba(6, 182, 212, 0.7));
+  }
+}
+
+@keyframes gridDrift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.animate-border-beam {
+  animation: borderBeam 8s linear infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-hologram {
+  animation: holographicPulse 4s ease-in-out infinite;
+}
+
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.cyber-grid-perspective {
+  transform: perspective(600px) rotateX(60deg);
+  transform-origin: center top;
+}
+
+/* Glassmorphism Hyper-styles */
+.glass-panel-3d {
+  background: rgba(11, 18, 36, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(30, 44, 79, 0.8);
+  box-shadow: 
+    0 10px 30px -10px rgba(0, 0, 0, 0.7),
+    0 0 20px -5px rgba(22, 140, 240, 0.15),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-3d:hover {
+  border-color: rgba(22, 140, 240, 0.5);
+  box-shadow: 
+    0 20px 40px -15px rgba(0, 0, 0, 0.8),
+    0 0 30px 2px rgba(6, 182, 212, 0.25),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060A14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2C4F;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #168CF0;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, aside, button, nav {
+    display: none !important;
+  }
+}

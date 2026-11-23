@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#0B1224"/>
+  <path d="M7 8L16 24L25 8" stroke="url(#logo_grad_1)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12 12L16 19L20 12" stroke="url(#logo_grad_2)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8"/>
+  <circle cx="7" cy="8" r="2.5" fill="#06B6D4"/>
+  <circle cx="25" cy="8" r="2.5" fill="#168CF0"/>
+  <circle cx="16" cy="24" r="2.8" fill="#8B5CF6"/>
+  <circle cx="16" cy="14" r="1.6" fill="#38BDF8"/>
+  <defs>
+    <linearGradient id="logo_grad_1" x1="7" y1="8" x2="25" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06B6D4"/>
+      <stop offset="0.5" stop-color="#168CF0"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="logo_grad_2" x1="12" y1="12" x2="20" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#168CF0"/>
+    </linearGradient>
+  </defs>
+</svg>
